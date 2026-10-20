@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: precision-irrigation-simplernn-api
+    env: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 8000
